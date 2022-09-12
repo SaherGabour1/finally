@@ -1,0 +1,178 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.main { 
+    width: 100%;
+   
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,#9c27b0,#8ecdff);
+   padding-bottom: 5%;
+}
+
+nav { 
+    width: 90%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-size: 128%;
+}
+
+.logo { 
+    flex-basis: 10%;
+    
+    
+}
+
+.logo img { 
+    width: 160px;
+    
+}
+
+.nav-links { 
+    flex: 1;
+    text-align: center;
+    padding-left: 7%;
+}
+
+.nav-links ul li { 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+.nav-links ul li a{ 
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.nav-links ul li a::after { 
+    content: '';
+    width: 0%;
+    height: 3.5px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+.nav-links ul li a:hover::after { 
+    width: 100%;
+
+
+}
+
+h5 { 
+    font-family: "Open Sans","Noto Kufi Arabic","Arial",sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: normal;
+}
+.footer-copyright { 
+    color: rgb(204, 204, 204);
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    padding-left: 4%;
+
+     
+}
+
+hr { 
+    margin-left: 15%; 
+  
+  }
+  .hr {
+    color: #a9a9a9;
+    opacity: 0.3;
+    }
+
+
+button {
+    width: 20%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px; 
+    border: none;
+    background: white;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 10%;
+    }
+
+
+    .middle-title { 
+        font-size: 4ex;
+        color: black;
+  padding-left: 39%;
+       text-align: left;
+       
+        font-family: Arial, Helvetica, sans-serif;
+      
+      }
+    
+
+
+      .page-hero_image { 
+        padding-left:6%;
+      }
+      
+
+      .logout{
+
+        padding-left: 12%;
+        font-size: 30px;
+        padding-bottom: 1%;
+        
+            
+      }
+        
+        
+      .logout a { 
+            
+        padding: 0px 20px;
+        color: rgb(7, 3, 2);
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 100px;
+        padding: 0 80x;
+        background: #bdbaba;
+        font-size: 28px;
+        font-family: "Clarkson",Helvetica,sans-serif;
+            
+      }
+      
+      
+      .back{
+        padding-left: 12%;
+        font-size: 30px;
+        padding-bottom: 1%;
+      
+      }
+      
+      .back a{
+      
+         padding: 0px 20px;
+        color: rgb(7, 3, 2);
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 100px;
+        padding: 0 80x;
+        background: #bdbaba;
+        font-size: 28px;
+        font-family: "Clarkson",Helvetica,sans-serif;
+      
+      
+      }
+      

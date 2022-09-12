@@ -1,0 +1,272 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  
+  .main { 
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,#9c27b0,#8ecdff);
+  }
+  
+  nav { 
+    width: 90%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-size: 128%;
+  }
+  
+  .logo { 
+    flex-basis: 10%;
+  
+  
+  }
+  
+  .logo img { 
+    width: 160px;
+  
+  }
+  
+  .nav-links { 
+    flex: 1;
+    text-align: center;
+    padding-left: 8%;
+  }
+  
+  .nav-links ul li { 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+  
+  }
+  
+  .nav-links ul li a{ 
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  
+  .nav-links ul li a::after { 
+    content: '';
+    width: 0%;
+    height: 3.5px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  
+  .nav-links ul li a:hover::after { 
+    width: 100%;
+  
+  
+  }
+  
+  
+  hr { 
+    margin-left: 15%; 
+  
+  }
+  
+  
+  
+  
+  
+  .middle-title { 
+      font-size: 5ex;
+      color: black;
+      text-align: center;
+      padding-right: 5%;
+      font-family: Arial, Helvetica, sans-serif;
+  
+    }
+  
+  .note{
+      font-size: 2.2ex;
+      color: rgb(8, 0, 255);
+      text-align: right;
+      padding-right: 22%;
+  
+  }
+  
+  
+  
+   .tr1 {
+      font-size: x-large;
+      color: aquamarine;
+   }
+  
+    .table-dark {
+      color: rgb(131, 36, 36);
+      background-color: #343a40;
+    }
+    .table-dark, .table-dark > td, .table-dark > th {
+      background-color: #4d5257;
+    }
+    .table {
+      width: 60%;
+      margin-left: 18%;
+      color: white;
+    }
+  tbody { 
+      text-align: center;
+      font-size: large;
+  }
+  
+  table, th, td {
+      border: 1px solid black;
+    }
+  
+  .a2 {
+      color: rgb(15, 0, 219);
+      font-size: x-large;
+      text-decoration: none;
+  }
+  
+  
+  .logout{
+  
+    padding-left: 12%;
+    font-size: 30px;
+    padding-bottom: 1%;
+  
+  
+  }
+  
+  
+  .logout a { 
+  
+    padding: 0px 20px;
+    color: rgb(7, 3, 2);
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 0 80x;
+    background: #bdbaba;
+    font-size: 28px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+  
+  }
+  
+  
+  .back{
+    padding-left: 12%;
+    font-size: 30px;
+    padding-bottom: 1%;
+  
+  }
+  
+  .back a{
+  
+     padding: 0px 20px;
+    color: rgb(7, 3, 2);
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 0 80x;
+    background: #bdbaba;
+    font-size: 28px;
+    font-family: "Clarkson",Helvetica,sans-serif;
+  
+  
+  }
+  
+  
+  .col-md-3{
+    font-size: large;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 5px 0 22px 0;
+  }
+  
+  
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 35%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    text-align: right;
+  
+  }
+  
+  
+  .form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: white;
+    text-align: right;
+  }
+  
+  
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding-left: 5px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    text-align: right;
+    height: 36px;
+    
+    
+  }
+  
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    
+  
+  }
+  
+  
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+  

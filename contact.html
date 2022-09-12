@@ -1,0 +1,117 @@
+<script>
+
+
+  function onlyNumberKey(evt) {
+
+      // Only ASCII character in that range allowed
+      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+
+      // Check if the inserted charcter is a number in ASCII code
+      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+          return false;
+      return true;
+  }
+
+  function onlyLettersKey(evt) {
+
+      // Only ASCII character in that range allowed
+      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+
+      // Check if the inserted charcter is a letter in ASCII code
+      if ((ASCIICode > 64 && ASCIICode < 91) || (ASCIICode > 96 && ASCIICode < 123))
+          return true;
+      return false;
+  }
+
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact1.css">
+    <title>צור קשר</title>
+</head>
+<body>
+  <div class="main" >
+    <nav>
+        <div class="logo">
+            <img src="Picture3.png" > 
+        </div>
+        <div class="nav-links" >
+            <ul>
+            
+              <li><a href="contact.html" >צור קשר </a></li>
+              <li><a href="patientadver1.php" >רשימת חולים</a></li>
+              <li><a href="hospital.html" >מעבדות בנק הדם</a></li>
+              <li><a href="index.html" >דף בית  </a></li>
+            </ul>   
+        </div> 
+        <div class="signin-signout">
+            <h2 class="signout" > 
+                <a class="singout-a" href="signout.html">הרשמה</a> 
+            </h2>
+            <h2 class="signin"> 
+                <a class="singin-a" href="signin.html">כניסה</a> 
+            </h2>
+        </div>
+    </nav> 
+
+    <hr width="70%" > 
+
+    
+        <br></br>
+
+        <div class="container">
+            <div style="text-align:center">
+              <h2>צור קשר &#9993;</h2>
+              <Br>
+              <p>:השאר לנו הודעה</p>
+              <br>
+              <p> .נשמח לקבל הערות ותגובות, המלצות או בקשות</p>
+              <p> .אנא מלאו את הפרטים בטופס המצורף</p>
+              <p>אנא הקפידו במיוחד על כתובת דואר אלקטרוני נכונה </p>
+                <p>על מנת להבטיח קבלת תשובה,</p>
+                
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="Picture3.png" style="width:100%">
+              </div>
+              <form action="sendEmail.php" method="POST" > 
+              <div class="column">
+                <form action="action_page.php">
+                  <label for="fullname">שם פרטי/FirstName</label>
+                  <input type="text" id="fname" name="fullname" placeholder="שם פרטי באנגלית" onkeypress="return onlyLettersKey(event)" maxlength="25">
+
+                  <label for="email">דוא"ל/Email</label>
+                  <input type="text" id="email" name="email" placeholder="כתובת  דוא'ל של השולח">
+
+                  <label for="title">נושא/Title</label>
+                  <input type="text" id="title" name="title"placeholder=" נא לרשום את הנושא באנגלית"  >
+
+                  <label for="body">הודעה/Massege</label>
+                  <textarea id="body" name="body" style="height:170px" placeholder=" נא לרשום את ההודעה באנגלית"  ></textarea>
+
+                  <input type="submit" value="שלח" name="submit">
+                  <input value="נקה טופס " type="reset" >
+              </div>
+            </form>
+            </div>
+          </div>
+          
+
+          <br>  <br> 
+          <footer class="footer-copyright">
+            <h5>
+             Nb.Sg.Platelet Donation - זכויות יוצרים שמורות ל-&copy;
+            </h5>
+       </footer>
+    
+    </div> 
+    
+</body>
+</html>
